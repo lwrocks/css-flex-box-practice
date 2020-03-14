@@ -61,12 +61,24 @@ body {
   padding: 10px;
 }
 
+.navbar a {
+  text-decoration: none;
+}
+
+.navbar a:hover {
+  background-color: pink;
+}
+
 .links {
   display: flex;
 }
 
 .links a {
   text-decoration: none;
+}
+
+.links a:hover {
+  background-color: yellow;
 }
 
 .links :nth-child(2) {

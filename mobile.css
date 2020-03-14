@@ -1,0 +1,9 @@
+.container,
+.navbar,
+.links {
+  flex-direction: column;
+}
+
+.navbar {
+  text-align: center;
+}
