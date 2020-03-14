@@ -1,0 +1,74 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.container {
+  flex: 1;
+
+  /* 100% of the viewport height */
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.box {
+  border: 1px solid green;
+  color: #fff;
+
+  /* this code below makes the .box a flex container to center its direct children */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 1;
+}
+
+.box:hover {
+  flex: 2;
+}
+
+.box:nth-of-type(1) {
+  background-color: #e06c9f;
+}
+
+.box:nth-of-type(2) {
+  background-color: #f283b6;
+}
+
+.box:nth-of-type(3) {
+  background-color: #edbfb7;
+  order: -1;
+}
+
+.box:nth-of-type(4) {
+  background-color: #b5bfa1;
+}
+
+.box:nth-of-type(5) {
+  background-color: #6e9887;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+}
+
+.links {
+  display: flex;
+}
+
+.links a {
+  text-decoration: none;
+}
+
+.links :nth-child(2) {
+  margin-left: 10px;
+}
